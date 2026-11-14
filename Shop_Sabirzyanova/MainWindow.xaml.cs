@@ -20,9 +20,17 @@ namespace Shop_Sabirzyanova
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<object> allItems = Classes.RepoItems.AllItems();
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public void CreateUI()
+        {
+            foreach (object Item in allItems)
+            {
+                parent.Children.Add(new Elements.Item(Item));
+            }
         }
     }
 }

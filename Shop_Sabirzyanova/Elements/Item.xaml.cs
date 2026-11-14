@@ -23,6 +23,19 @@ namespace Shop_Sabirzyanova.Elements
         public Item(object ItemData)
         {
             InitializeComponent();
+            Classes.Shop ShopData = ItemData as Classes.Shop;
+            tb_Name.Content = ShopData.Name;
+            tb_Price.Content = "Цена: " + ShopData.Price;
+            if (ItemData is Classes.Children)
+            {
+                Classes.Children ChildrenData = ItemData as Classes.Children;
+                tb_Characteristics.Content = "Возраст: " + ChildrenData.Age;
+            }
+            if (ItemData is Classes.Sport)
+            {
+                Classes.Sport SportData = ItemData as Classes.Sport;
+                tb_Characteristics.Content = "Размер: " + SportData.Size;
+            }
         }
     }
 }
