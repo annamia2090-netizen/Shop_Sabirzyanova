@@ -36,6 +36,12 @@ namespace Shop_Sabirzyanova.Elements
                 Classes.Sport SportData = ItemData as Classes.Sport;
                 tb_Characteristics.Content = "Размер: " + SportData.Size;
             }
+            if (ItemData is Classes.Electronics)
+            {
+                Classes.Electronics ElectronicsData = ItemData as Classes.Electronics;
+                tb_Characteristics.Content = "Емкость аккумулятора: : " + ElectronicsData.BatteryCapacity + " мАч";
+                tb_Characteristics2.Content = "Скорость езды: " + ElectronicsData.MaxSpeed + " км/ч";
+            }
         }
     }
 }

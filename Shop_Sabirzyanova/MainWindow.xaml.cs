@@ -24,6 +24,7 @@ namespace Shop_Sabirzyanova
         public MainWindow()
         {
             InitializeComponent();
+            CreateUI();
         }
         public void CreateUI()
         {

@@ -15,8 +15,10 @@ namespace Shop_Sabirzyanova.Classes
             allItems.Add(new Children("Кактус танцующий", 894, 6));
             allItems.Add(new Children("Мягкая игрушка - кошка подушка :3", 1754, 6));
             allItems.Add(new Sport("Спортивный мужской костюм", 4913, "S"));
-            allItems.Add(new Sport("Мяч для водного поло", 812, "61-63 cv"));
+            allItems.Add(new Sport("Мяч для водного поло", 812, "61-63 cм"));
             allItems.Add(new Sport("Набор для гольфа Partida", 3950, "600*800мм"));
+            allItems.Add(new Electronics("Электросамокат Xiaomi", 29990, 7800, 25));
+            allItems.Add(new Electronics("Квадрокоптер", 38000, 2250, 57));
             return allItems;
         }
     }
